@@ -1,7 +1,7 @@
 {
   "name": "pengxw-js-utils",
   "version": "1.0.0",
-  "description": "",
+  "description": "js/ts常用工具类",
   "main": "lib/index.js",
   "types": "lib/index.d.ts", 
   "scripts": {
@@ -18,7 +18,7 @@
   "files": [
     "lib/**/*"
   ],
-  "keywords": [],
+  "keywords": ["ts", "utils"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
