@@ -4,8 +4,8 @@
  * @param name 
  */
 export const getQueryString = (name: string): string => {
-  let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-  let r = window.location.search.substr(1).match(reg);
+  const reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+  const r = window.location.search.substr(1).match(reg);
   if (r != null) {
       return unescape(r[2]);
   };
@@ -17,10 +17,11 @@ export const getQueryString = (name: string): string => {
  * @param cname
  */
 export const getCookie = (cname: string) :string => {
-  var name = cname + "=";
-  var ca = document.cookie.split(';');
-  for (var i = 0; i < ca.length; i++) {
-    var c = ca[i].trim();
+  const name = cname + "=";
+  const ca = document.cookie.split(';');
+  let i: any;
+  for (i of ca) {
+    const c = ca[i].trim();
     if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
   }
   return '';
