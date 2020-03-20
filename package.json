@@ -1,7 +1,7 @@
 {
-  "name": "pengxw-js-utils",
-  "version": "1.0.1",
-  "description": "js/ts常用工具类",
+  "name": "js-util-plus",
+  "version": "1.0.0",
+  "description": "js/ts常用工具包",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -10,7 +10,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run lint",
+    "prepublishOnly": "npm run test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
@@ -22,8 +22,9 @@
     "ts",
     "utils"
   ],
-  "author": "",
+  "author": "pengxingwang",
   "license": "ISC",
+  "email": "939212596@qq.com",
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "jest": "^25.1.0",
