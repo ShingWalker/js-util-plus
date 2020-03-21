@@ -8,7 +8,7 @@
 ```
 yarn add js-util-plus / npm install js-util-plus --dev
 
-import * as util from '../index';
+import * as util from 'js-util-plus';
 ```
 
 ## 三.API
