@@ -1,22 +1,21 @@
 # js-util-plus
-## 介绍 
+## 一.介绍 
 > 用typescript写的常用工具类
-
 
 ### 每次写项目都要写一些重复的工具类，因此把一些常用的工具类封装起来。
 
-## 如何使用
+## 二.如何使用
 ```
 yarn add js-util-plus / npm install js-util-plus --dev
 
 import * as util from '../index';
 ```
 
-## API
+## 三.API
 
-## string
+## 1.string
 
-1. strCheck 检验
+1.1 strCheck 检验
 
 ```
 util.strCheck(str:string, type: StrEnum) => boolean
@@ -40,29 +39,53 @@ enum StrEnum {
   UPPER = 'upper',
   HTML = 'HTML'
 }
+
+// example
+util.strCheck('18268100000', 'phone') => true
+
+
 ```
 
 
-## object 
-1. objIsNull 对象判空 
+## 2.object 
+2.1 objIsNull 对象判空 
 ```
 util.objIsNull(obj: object) => boolean
+
+
+// example
+const obj = {} 
+util.objIsNull(obj) => false  // 传参不需要判空，代码里已判空
 ```
 
-## array 
-1. arrIsNull 数组判空
+## 3.array 
+3.1 arrIsNull 数组判空
 ```
 util.arrIsNull(arr: any[]) => boolean
+
+// example
+const arr = [] 
+util.arrIsNull(arr) => false  // 传参不需要判空，代码里已判空
 ```
 
-## store
-1. cookieGet 获取cookie中的某个值
+## 4.store
+4.1 cookieGet 获取cookie中的某个值
 ```
 util.cookieGet(str: string) => string
+
+
+// example
+document.cookie="token=token";
+util.cookieGet('token') => 'token'
 ```
 
-## uri
-1. uriGetParam 获取uri上的某个参数
+## 5.uri
+5.1 uriGetParam 获取uri上的某个参数
 ```
 util.uriGetParam(str: string) => string
+
+
+// example
+www.xxx.com?a=1&b=2
+util.uriGetParam('a') => '1'
 ```
