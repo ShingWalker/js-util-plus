@@ -46,12 +46,10 @@ util.strCheck('18268100000', 'phone') => true
 
 ```
 
-
 ## 2.object 
 2.1 objIsNull 对象判空 
 ```
 util.objIsNull(obj: object) => boolean
-
 
 // example
 const obj = {} 
@@ -69,10 +67,9 @@ util.arrIsNull(arr) => false  // 传参不需要判空，代码里已判空
 ```
 
 ## 4.store
-4.1 cookieGet 获取cookie中的某个值
+4.1 cookieGet 获得coookie中某个值 
 ```
 util.cookieGet(str: string) => string
-
 
 // example
 document.cookie="token=token";
@@ -83,7 +80,6 @@ util.cookieGet('token') => 'token'
 5.1 uriGetParam 获取uri上的某个参数
 ```
 util.uriGetParam(str: string) => string
-
 
 // example
 www.xxx.com?a=1&b=2
