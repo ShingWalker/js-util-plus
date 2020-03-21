@@ -1,2 +1,9 @@
+#defult
 node_modules
 /lib
+# webstrom
+.idea/
+#vscode
+.vscode/
+# misc
+.DS_Store
