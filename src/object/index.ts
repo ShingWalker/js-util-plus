@@ -1,5 +1,5 @@
 /**
- * 判断对象是否为空
+ * 判断对象是否为空（已判空）
  * @param obj
  */
 export const objIsNull = (obj: object): boolean => {

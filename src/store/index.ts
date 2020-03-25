@@ -1,5 +1,5 @@
 /**
- * 获取token
+ * 获取cookie中的值
  * @param cname
  */
 export const cookieGet = (cname: string): string => {

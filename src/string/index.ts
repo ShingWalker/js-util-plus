@@ -18,6 +18,11 @@ enum StrEnum {
   HTML = 'HTML',
 }
 
+/**
+ * 检验 
+ * @param str 字符串
+ * @param type 类型 phone | tel | card | postal | qq | email | URL | IP | date | number | english | chinese | lower | upper | HTML
+ */
 export const strCheck = (str: string, type: StrEnum): boolean => {
   switch (type) {
     // 手机号码

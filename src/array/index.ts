@@ -1,5 +1,5 @@
 /**
- * 判断数据是否为空
+ * 判断数据是否为空（已判空）
  * @param arr
  */
 export const arrIsNull = (arr: any[]): boolean => {
