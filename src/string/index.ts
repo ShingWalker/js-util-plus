@@ -19,7 +19,7 @@ enum StrEnum {
 }
 
 /**
- * 检验 
+ * 检验
  * @param str 字符串
  * @param type 类型 phone | tel | card | postal | qq | email | URL | IP | date | number | english | chinese | lower | upper | HTML
  */
