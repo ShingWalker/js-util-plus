@@ -4,4 +4,4 @@ import { strCheck } from './string/index';
 import { cookieGet } from './store/index';
 import { uriGetParam } from './uri/index';
 
-export { arrIsNull, objIsNull, strCheck, cookieGet, uriGetParam }
+export { arrIsNull, objIsNull, strCheck, cookieGet, uriGetParam };

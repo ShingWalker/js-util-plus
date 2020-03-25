@@ -1,13 +1,13 @@
 /**
  * 判断对象是否为空
- * @param obj 
+ * @param obj
  */
-export const objIsNull = (obj: object) : boolean => {
-  let result: boolean
-  if(obj && Object.keys(obj).length > 0) {
-    result = true
-  }else {
-    result = false
+export const objIsNull = (obj: object): boolean => {
+  let result: boolean;
+  if (obj && Object.keys(obj).length > 0) {
+    result = true;
+  } else {
+    result = false;
   }
-  return result
-}
+  return result;
+};
