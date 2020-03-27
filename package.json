@@ -1,6 +1,6 @@
 {
   "name": "js-util-plus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "js/ts常用工具包",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,12 +18,16 @@
   "files": [
     "lib/**/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pengxingwang/js-util-plus"
+  },
+  "license": "MIT",
   "keywords": [
     "ts",
     "utils"
   ],
   "author": "pengxingwang",
-  "license": "ISC",
   "email": "939212596@qq.com",
   "devDependencies": {
     "@types/jest": "^25.1.4",
