@@ -14,7 +14,7 @@ export const browserGetType = (): BrowserType => {
     return 'Edge';
   }else if(userAgent.indexOf("Firefox") > -1){
     return 'Firefox';
-  }else if(userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") == -1){
+  }else if(userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") === -1){
     return 'Safari';
   }else if(userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Safari") > -1){
     return 'Chrome';
