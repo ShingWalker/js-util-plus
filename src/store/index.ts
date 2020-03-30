@@ -2,7 +2,7 @@
  * 获取cookie中的值
  * @param cname
  */
-export const cookieGet = (cname: string): string => {
+export const storeCookieGet = (cname: string): string => {
   const name = cname + '=';
   const ca = document.cookie.split(';');
     for (const i of ca) {
