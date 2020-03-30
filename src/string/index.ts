@@ -18,6 +18,7 @@ enum StrEnum {
   HTML = 'HTML',
 }
 
+
 /**
  * 检验
  * @param str 字符串

@@ -1,9 +1,10 @@
-#defult
+# defult
 node_modules
 /lib
+/example
 # webstrom
 .idea/
-#vscode
+# vscode
 .vscode/
 # misc
 .DS_Store
