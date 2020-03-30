@@ -10,3 +10,4 @@ export const uriGetParam = (name: string): string => {
   }
   return '';
 };
+
