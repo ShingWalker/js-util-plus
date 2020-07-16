@@ -57,7 +57,7 @@ export const storeLocalStorageSet = (name: string, value: any): void => {
 
 
 /**
- * 设置localStorage 已经JSON.parse
+ * 获取localStorage 已经JSON.parse
  * @param name 
  * @param value 
  */

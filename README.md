@@ -15,7 +15,7 @@ import * as util from 'js-util-plus';
 
 ## 1.string
 
-1.1 strCheck 检验
+1.1 strCheck 验证 
 
 ```
 util.strCheck(str:string, type: StrEnum) => boolean
@@ -42,8 +42,13 @@ enum StrEnum {
 
 // example
 util.strCheck('18268100000', 'phone') => true
+```
 
-
+1.2 strTransformName 两个字名字中间加空格
+```
+util.strTransformName(name: string) => cname
+// example
+util.strTransformName('王五') => '王　五'
 ```
 
 ## 2.object 
@@ -67,14 +72,42 @@ util.arrIsNull(arr) => false  // 传参不需要判空，代码里已判空
 ```
 
 ## 4.store
-4.1 cookieGet 获得coookie中某个值 
+4.1 storeCookieSet 设置某个cookie
 ```
-util.cookieGet(str: string) => string
+util.storeCookieSet(str: string, value: string) => void
+
+// example
+util.storeCookieSet('token', 'token')
+```
+
+4.2 storeCookieGet 获得coookie中某个值 
+```
+util.storeCookieGet(str: string) => string
 
 // example
 document.cookie="token=token";
-util.cookieGet('token') => 'token'
+util.storeCookieGet('token') => 'token'
 ```
+
+4.3 storeCookieDelete 删除单条cookie
+```
+util.storeCookieDelete(str: string) => void 
+```
+
+4.4 storeCookieRemove  删除所有cookie
+```
+util.storeCookieRemove() => void
+```
+4.5 storeLocalStorageSet 设置localStorage 已经JSON.stringify
+```
+util.storeLocalStorageSet(name: string, value: any) => void
+```
+
+4.6  storeLocalStorageGet  获取localStorage 已经JSON.parse
+```
+util.storeLocalStorageGet(str: string) => any 
+```
+
 
 ## 5.uri
 5.1 uriGetParam 获取uri上的某个参数
@@ -84,4 +117,22 @@ util.uriGetParam(str: string) => string
 // example
 www.xxx.com?a=1&b=2
 util.uriGetParam('a') => '1'
+```
+
+## 6.浏览器
+6.1 browserGetType 获取浏览器类型
+```
+util.browserGetType() => string
+
+// example
+util.browserGetType() => 'Opera' || 'IE' || 'Edge' || 'Firefox' || 'Safari' || 'Chrome' || 'OverIE10'
+```
+
+6.1 browserIsNew 是否是现代浏览器（IE11及以上）
+```
+util.browserIsNew() => boolean
+
+// example
+// 如果是IE11及以上，返回true
+util.browserIsNew() => true 
 ```

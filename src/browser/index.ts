@@ -28,7 +28,7 @@ export const browserGetType = (): BrowserType => {
 /**
  * 是否是现代浏览器
  */
-export const browserIsNew= (): boolean => {
+export const browserIsNew = (): boolean => {
   let result;
   // window.attachEvent 在 IE<=10 是有定义的，其他浏览器是 underfined
   if((window as any).window.attachEvent){
