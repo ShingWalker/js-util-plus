@@ -3,12 +3,14 @@
  * @param tree 树结构
  * @param func 函数
  */
-import any = jasmine.any;
 
 export const treeForeach = (tree: any[], func: any): void => {
-  let node, list = [...tree]
+  let node;
+  const list = [...tree];
+  // tslint:disable-next-line:no-conditional-assignment
   while (node = list.shift()) {
     func(node)
+    // tslint:disable-next-line:no-unused-expression
     node.children && list.push(...node.children)
   }
 }
@@ -21,6 +23,7 @@ export const treeForeach = (tree: any[], func: any): void => {
 export const treeForeachDepthDesc = (tree: any[], func: any):void => {
   tree.forEach(data => {
     func(data)
+    // tslint:disable-next-line:no-unused-expression
     data.children && treeForeachDepthDesc(data.children, func) // 遍历子树
   })
 }
@@ -32,6 +35,7 @@ export const treeForeachDepthDesc = (tree: any[], func: any):void => {
  */
 export const treeForeachDepthAsc = (tree: any[], func: any):void => {
   tree.forEach(data => {
+    // tslint:disable-next-line:no-unused-expression
     data.children && treeForeachDepthAsc(data.children, func) // 遍历子树
     func(data)
   })
@@ -44,8 +48,9 @@ export const treeForeachDepthAsc = (tree: any[], func: any):void => {
  * @param pid  pic名
  */
 export const listToTree = (list: any[], id: string = "id" , pid: string = "pid"): any[] => {
-  let info = list.reduce((map, node) => (map[node[id]] = node, node.children = [], map), {})
+  const info = list.reduce((map, node) => (map[node[id]] = node, node.children = [], map), {})
   return list.filter(node => {
+    // tslint:disable-next-line:no-unused-expression
     info[node[pid]] && info[node[pid]].children.push(node)
     return !node[pid]
   })
