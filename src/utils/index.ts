@@ -5,6 +5,5 @@
  */
 export const ulg = (value: any, name?: any): any => {
   // tslint:disable-next-line:no-console
-  return console.log(`type：${typeof(value)},`, `name：${name || value},` , 'value:', value)
-}
-
+  return console.log(`type：${typeof value},`, `name：${name || value},`, 'value:', value);
+};

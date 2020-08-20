@@ -10,4 +10,4 @@ test('arrIsNull', () => {
 
 test('objIsNull', () => {
   expect(util.objIsNull({})).toBe(false);
-})
+});
