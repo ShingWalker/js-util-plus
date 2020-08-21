@@ -19,7 +19,7 @@ import {
   treeForeach,
   treeForeachDepthAsc,
   treeForeachDepthDesc,
-  vl
+  vl,
 } from './tree/index';
 
 export {
@@ -43,5 +43,5 @@ export {
   treeForeach,
   treeForeachDepthAsc,
   treeForeachDepthDesc,
-  vl
+  vl,
 };
