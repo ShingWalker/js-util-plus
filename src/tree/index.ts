@@ -90,4 +90,3 @@ export const treeFindPath = (tree: any[], func: any, path = []): any[] => {
   }
   return [];
 };
-
