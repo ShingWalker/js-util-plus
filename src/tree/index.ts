@@ -77,7 +77,7 @@ export const treeFilter = (tree: any[], func: any): any[] => {
  * @param func
  * @param path 路径有默认值
  */
-export function treeFindPath(tree: any[], func: any, path = []): any {
+export const treeFindPath = (tree: any[], func: any, path = []): any[] =>  {
   if (!tree) return [];
   for (const data of tree) {
     path.push(data.id);
@@ -90,3 +90,8 @@ export function treeFindPath(tree: any[], func: any, path = []): any {
   }
   return [];
 }
+
+
+export const vl = (): any => {
+  return 1;
+};
