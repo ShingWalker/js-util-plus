@@ -59,6 +59,6 @@ export const storeLocalStorageSet = (name: string, value: any): void => {
  */
 export const storeLocalStorageGet = (name: string): any => {
   let result = localStorage.getItem(name);
-  result = result && JSON.parse(result) || null;
+  result = (result && JSON.parse(result)) || null;
   return result;
 };
