@@ -11,7 +11,7 @@ import {
 } from './store/index';
 import { uriGetParam } from './uri/index';
 import { browserGetType, browserIsNew } from './browser/index';
-import { ulg } from './utils/index';
+import { ulg, vl } from './utils/index';
 import {
   treeFilter,
   listToTree,
@@ -19,7 +19,6 @@ import {
   treeForeach,
   treeForeachDepthAsc,
   treeForeachDepthDesc,
-  vl,
 } from './tree/index';
 
 export {

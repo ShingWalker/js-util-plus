@@ -91,6 +91,3 @@ export const treeFindPath = (tree: any[], func: any, path = []): any[] => {
   return [];
 };
 
-export const vl = (): any => {
-  return 1;
-};
